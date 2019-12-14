@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.overcooked">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".LevelTwo.BonusLevelTwoInstructionActivity"></activity>
+        <activity android:name=".LevelTwo.BonusLevelTwoActivity" />
+        <activity android:name=".GeneralSuccessActivity" />
+        <activity android:name=".GeneralFailActivity" />
+        <activity android:name=".LevelTwo.LevelTwoCustomization" />
+        <activity android:name=".LevelThree.LevelThreeMainActivity" />
+        <activity android:name=".LevelThree.LevelThreeSuccessActivity" />
+        <activity android:name=".LevelThree.LevelThreeActivity" />
+        <activity android:name=".LevelTwo.LevelTwoSuccessActivity" />
+        <activity android:name=".LevelTwo.LevelTwoMainActivity" />
+        <activity android:name=".LevelOne.LevelOneActivity" />
+        <activity android:name=".Game" />
+        <activity android:name=".MainMenu.Settings" />
+        <activity android:name=".Scoreboard" />
+        <activity android:name=".MainMenu.NewUserLogin" />
+        <activity android:name=".MainMenu.UserStatistics" />
+        <activity
+            android:name=".MainMenu.MainMenuActivity"
+            android:parentActivityName=".MainMenu.MainActivity">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainMenu.MainActivity" />
+        </activity>
+        <activity android:name=".MainMenu.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
