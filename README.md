@@ -37,5 +37,4 @@ Bonus Level Two
 - Receive six cheese to win the game.
 - Score will decrease by 10 if you receive a bad ingredient (Green square).
 
-* If you cannot run the application for the first time (e.g. NullPointerException),
-  run the program a second time. Android Studio can be buggy.
+**If you cannot run the application for the first time (e.g. NullPointerException), run the program a second time. Android Studio can be buggy.**
